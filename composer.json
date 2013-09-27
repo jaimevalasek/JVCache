@@ -1,0 +1,29 @@
+{
+    "name": "jaimevalasek/jv-cache",
+    "description": "Start program with a structure ready. Advisable to use the Module JVBase for beginners and / or people who have no knowledge of how to build a well structured project.",
+    "license": "BSD-3-Clause",
+    "type": "library",
+    "keywords": [
+        "zf2", "jv-cache", "zf2 cache", "jaimevalasek"
+    ],
+    "homepage": "https://github.com/jaimevalasek/JVCache",
+    "authors": [
+        {
+            "name": "Jaime Marcelo Valasek",
+            "email": "jaime.valasek@gmail.com",
+            "homepage": "http://valasek.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*"
+    },    
+    "autoload": {
+        "psr-0": {
+            "JVCache": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
