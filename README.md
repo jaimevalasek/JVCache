@@ -14,22 +14,38 @@ After done the above steps, open the file `config/application.config.php`. And a
 
 ### With composer
 
-`"require": {
+```php
+"require": {
     "jaimevalasek/jv-cache": "dev-master"
-}`
+}
+```
 
-Now tell composer to download ZfcUser by running the command:
-`$ php composer.phar update`
+Now tell composer to download JVCache by running the command:
+```php
+$ php composer.phar update
+```
 
 ### Enabling it in your `application.config.php`.
-`<?php
+```php
+<?php
 return array(
     'modules' => array(
         // ...
         'JVCache',
     ),
     // ...
-);`
+);
+```
+
+### Add the following code in the module file module.config.php JVConfig or in your application module
+```php
+'JVCache' => array(
+    'useCache' => false,
+    'adapter' => 'filesystem',
+    'ttl' => 7200, // 1 hora = 3600, 2 horas 7200,
+    'cacheDir' => __DIR__ . '/../../../data/cache',
+),
+```
 
 Using the JVCache
 -----

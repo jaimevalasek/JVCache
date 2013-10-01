@@ -41,7 +41,6 @@
 namespace JVCache;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-use Zend\Mvc\MvcEvent;
 
 class Module implements AutoloaderProviderInterface
 {
